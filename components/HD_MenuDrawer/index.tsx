@@ -1,8 +1,14 @@
+import React from "react";
 import { Typography, SwipeableDrawer, Box, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 
-const HD_MenuDrawer = ({ menuOpen, onClose }) => {
+type MenuDrawerProps = {
+  menuOpen: boolean;
+  onClose(): void;
+};
+
+const HD_MenuDrawer = ({ menuOpen, onClose }: MenuDrawerProps) => {
   return (
     <SwipeableDrawer
       anchor="left"
@@ -10,12 +16,12 @@ const HD_MenuDrawer = ({ menuOpen, onClose }) => {
       open={menuOpen}
       onClose={onClose}
     >
-      <Box style={{ justifyContent: "flex-end", display: "flex" }}>
+      <Box display="flex" justifyContent="flex-end">
         <IconButton onClick={onClose}>
           <CloseIcon />
         </IconButton>
       </Box>
-      <Box style={{ padding: "20px", width: "250px" }}>
+      <Box padding="20px" width="250px">
         <Typography variant="h5">Menu</Typography>
         <Link href="/" onClick={onClose}>
           <Typography>Home</Typography>
