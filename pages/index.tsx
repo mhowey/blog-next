@@ -18,16 +18,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Grid container spacing={2}>
-        <Grid item xs={12}>
-          <Typography variant="h4" className={styles.title}>
-            {siteName}
-          </Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Typography className={styles.description}>{siteName}</Typography>
-        </Grid>
-      </Grid>
+      <Typography variant="h1">{siteName}</Typography>
+      <Typography variant="body2">{siteName}</Typography>
     </>
   );
 }
