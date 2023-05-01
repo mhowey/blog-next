@@ -29,11 +29,11 @@ const HD_AppBar = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Typography>{siteName}</Typography>
+            <Typography variant="h6">{siteName}</Typography>
           </Stack>
           <Box flexGrow={1} />
           <Box>
-            <Typography>Creation of {creatorName}</Typography>
+            <Typography variant="h6">{creatorName}</Typography>
           </Box>
         </Toolbar>
       </AppBar>
