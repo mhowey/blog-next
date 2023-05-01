@@ -6,6 +6,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## An open-source starter template for creating new NEXT.js apps
 
+(alpha-next-template)[https://alpha-template.netlify.app/]
+
 ### Features
 - TypeScript
 - MUI@5 with emotion and styled-components
