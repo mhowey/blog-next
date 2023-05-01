@@ -5,43 +5,43 @@ export const theme = createTheme({
     MuiSvgIcon: {
       styleOverrides: {
         root: {
-          color: process.env.NEXT_PUBLIC_THEME_DARK,
+          color: process.env.NEXT_PUBLIC_THEME_DARK || "#000",
         },
       },
     },
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundColor: process.env.NEXT_PUBLIC_THEME_PRIMARY,
-          color: process.env.NEXT_PUBLIC_THEME_DARK,
+          backgroundColor: process.env.NEXT_PUBLIC_THEME_PRIMARY || "#CCC",
+          color: process.env.NEXT_PUBLIC_THEME_DARK || "#000",
         },
       },
     },
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: process.env.NEXT_PUBLIC_THEME_PRIMARY,
+          backgroundColor: process.env.NEXT_PUBLIC_THEME_PRIMARY || "#CCC",
         },
       },
     }
   },
   typography: {
-    fontFamily: "sans-serif",
+    fontFamily: "Arial,sans-serif",
     h1: {
       fontSize: "2rem",
       marginBottom: "1rem",
-      color: process.env.NEXT_PUBLIC_THEME_LIGHT,
+      color: process.env.NEXT_PUBLIC_THEME_LIGHT || "#ccc",
     },
     h6: {
-      color: process.env.NEXT_PUBLIC_THEME_TERTIARY,
+      color: process.env.NEXT_PUBLIC_THEME_DARK || "#000",
     },
     body1: {
-      color: process.env.NEXT_PUBLIC_THEME_DARK,
+      color: process.env.NEXT_PUBLIC_THEME_DARK || "#000",
     },
     body2: {
       marginBottom: "1rem",
       fontSize: "1.2rem",
-      color: process.env.NEXT_PUBLIC_THEME_LIGHT,
+      color: process.env.NEXT_PUBLIC_THEME_LIGHT || "#ccc",
     },
   },
   palette: {
