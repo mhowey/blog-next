@@ -10,10 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>{siteName}</title>
-        <meta
-          name="description"
-          content=">Alpha Starter Template NEXT.js app"
-        />
+        <meta name="description" content="Alpha Starter Template NEXT.js app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
