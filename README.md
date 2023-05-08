@@ -2,18 +2,46 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ***
 
-# Alpha NEXT.js Starter
+# Alpha NEXT.js Blog Edition Starter
 
-## An open-source starter template for creating new NEXT.js apps
+## An open-source starter template for creating new NEXT.js apps with a blog
 
-[alpha-next-template Is Deployed Here](https://alpha-template.netlify.app/)
+[blog-next-template Is Deployed Here](https://alpha-template.netlify.app/)
 
 ### Features
 - TypeScript
 - MUI@5 with emotion and styled-components
-- Basic navigation setup
-- Standard routes setup
-- A work in progress!
+- Basic navigation setup with slide-out drawer
+- Standard pages routes setup
+- A Blog Interface for various content providers
+
+### Blog Interface
+
+To extend the basic template to 
+be more useful for a wider variety
+of website types, we're adding a
+blogging feature.
+
+***
+#### Blogging Requirements
+#### Blog Information Architecture
+- Blog -> /topics/ top level (i.e. categories)
+- Blog -> /[topic-slug] -> articleList()
+- Blog -> /[topic-slug] -> /[article-slug] -> articleDetail()
+
+Do we need to have the alternative below...to use an id? or is a unique slug just as good? <strong>Leaning toward toward using slug exclusively. It is more semantic and "SEO" anyway.</strong>
+
+- Blog -> /[topic-slug] -> /[article-id] -> articleDetail()
+
+#### Wildcard "404 Not Found"
+
+The inclusion of any "unknown slug", in either the topic slot, or the article slot, should kick the user to a helpful and fun 404 page that tries to help them with the url using ChatGPT or some other AI mechanism to get them back on track to accomplishing what they were trying to accomplish.
+
+NOTE: ai-user This is going to be a separate open-source project from Howey Design focused on using artificial intelligence to improve the user experience of web applications, starting with "helpful error handling and redirection" -> such as the above requirement. So this part will be developed as a plugin to the system.
+
+***
+
+
 
 ***
 ## Getting Started

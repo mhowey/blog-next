@@ -10,9 +10,7 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 import GavelIcon from "@mui/icons-material/Gavel";
-import ContentCut from "@mui/icons-material/ContentCut";
 import HomeIcon from "@mui/icons-material/Home";
-import ContentCopy from "@mui/icons-material/ContentCopy";
 import ContentPaste from "@mui/icons-material/ContentPaste";
 import Cloud from "@mui/icons-material/Cloud";
 
@@ -46,6 +44,17 @@ const HD_MenuDrawer = ({ menuOpen, onClose }: MenuDrawerProps) => {
                 <ListItemText>Home</ListItemText>
                 <Typography variant="body2" color="text.secondary">
                   {/* ⌘X */}
+                  --
+                </Typography>
+              </MenuItem>
+            </Link>
+            <Link href="/blog" onClick={onClose}>
+              <MenuItem>
+                <ListItemIcon>
+                  <HelpCenterIcon fontSize="small" />
+                </ListItemIcon>
+                <ListItemText>Blog</ListItemText>
+                <Typography variant="body2" color="text.secondary">
                   --
                 </Typography>
               </MenuItem>
